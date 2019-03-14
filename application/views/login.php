@@ -8,7 +8,7 @@
 <div class="login-box">
   <div class="login-logo">
     <!-- <a href="../../index2.html"><b>BANK </b>INDONESIA</a> -->
-    <img src="<?php echo base_url('asset/home/images/logo_bi.png'); ?>" width="300" height="75">
+    <img src="<?php echo base_url('asset/home/images/logo_bi.png'); ?>" width="350" height="75">
   </div>
   <!-- /.login-logo -->
   <?php

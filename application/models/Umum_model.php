@@ -77,10 +77,6 @@ class Umum_model extends CI_Model {
         else
         {
         	return $this->upload->data();
-      //   	$data = array(
-		    // 	'berkas_rekomendasi' => $this->upload->data('file_name'),
-		    // );
-		    // $this->db->insert('datapendaftar', $data);
         }
 	}
 
@@ -103,10 +99,6 @@ class Umum_model extends CI_Model {
         else
         {
         	return $this->upload->data();
-      //   	$data = array(
-		    // 	'cv' => $this->upload->data('file_name'),
-		    // );
-		    // $this->db->insert('datapendaftar', $data);
         }
 	}
 
@@ -129,10 +121,6 @@ class Umum_model extends CI_Model {
         else
         {
         	return $this->upload->data();
-      //   	$data = array(
-		    // 	'pasphoto' => $this->upload->data('file_name'),
-		    // );
-		    // $this->db->insert('datapendaftar', $data);
         }
 	}
 }

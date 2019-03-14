@@ -2,11 +2,10 @@
 <html>
 
 <head>
-  <title>Studies Education Category Bootstrap Responsive website Template | Home :: W3layouts</title>
+  <title><?php echo SITE_NAME; ?></title>
   <!-- Meta tag Keywords -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8" />
-  <meta name="keywords" content="Studies Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
   <script>
     addEventListener("load", function () {
       setTimeout(hideURLbar, 0);
@@ -77,35 +76,6 @@
         </a>
       </h1>
       <!-- //logo -->
-      <!-- nav -->
-      <div class="nav_w3ls mx-lg-auto">
-        <nav>
-          <!-- <label for="drop" class="toggle">Menu</label>
-          <input type="checkbox" id="drop" />
-          <ul class="menu mx-lg-auto">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li> -->
-              <!-- First Tier Drop Down -->
-              <!-- <label for="drop-2" class="toggle toogle-2">Pages <span class="fa fa-angle-down" aria-hidden="true"></span>
-              </label>
-              <a href="#">Pages <span class="fa fa-angle-down" aria-hidden="true"></span></a>
-              <input type="checkbox" id="drop-2" />
-              <ul>
-                <li><a href="#services" class="drop-text">Services</a></li>
-                <li><a href="#professors" class="drop-text">Professors</a></li>
-                <li><a href="#blog" class="drop-text">Blog</a></li>
-                <li><a href="#who" class="drop-text">Who We Are</a></li>
-                <li><a href="#testi" class="drop-text">Testimonials</a></li>
-              </ul>
-            </li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact Us
-            </a></li>
-          </ul>
-        </nav> -->
-      </div>
-      <!-- //nav -->
     </div>
   </div>
   <!-- //navigation -->
@@ -113,7 +83,7 @@
   <!-- Modal -->
   <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <?php echo form_open('auth/prosesDaftar'); ?>
+      <?php echo form_open('auth/prosesDaftar', array('autocomplete' => 'off')); ?>
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Register</h5>
