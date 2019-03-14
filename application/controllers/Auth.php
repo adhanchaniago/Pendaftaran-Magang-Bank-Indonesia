@@ -89,4 +89,40 @@ class Auth extends CI_Controller {
 			}
 		}
 	}
+
+	public function logout()
+	{
+		$this->session->sess_destroy();
+		redirect(base_url('login'));
+	}
+
+	public function akunadmin()
+	{
+		$email = "admin".rand(1,9).time();
+		$pass = password_hash("123", PASSWORD_BCRYPT);
+		
+		$data = array(
+			'email' => $email,
+			'password' => $pass,
+			'level' => 'Admin',
+			'tanggal' => date('Y-m-d'),
+		);
+		$this->db->insert('user', $data);
+		echo "<script>alert('Berhasil');</script>";
+	}
+	
+	public function akuninstan()
+	{
+		$email = "humas".rand(1,9).time();
+		$pass = password_hash("123", PASSWORD_BCRYPT);
+		
+		$data = array(
+			'email' => $email,
+			'password' => $pass,
+			'level' => 'Humas',
+			'tanggal' => date('Y-m-d'),
+		);
+		$this->db->insert('user', $data);
+		echo "<script>alert('Berhasil');</script>";
+	}
 }
