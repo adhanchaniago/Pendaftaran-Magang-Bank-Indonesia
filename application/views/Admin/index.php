@@ -34,7 +34,7 @@
       ?>
       <!-- Small boxes (Stat box) -->
       <div class="row">
-        <div class="col-lg-6 col-xs-6">
+        <div class="col-lg-4 col-xs-6">
           <!-- small box -->
           <div class="small-box bg-aqua">
             <div class="inner">
@@ -49,16 +49,30 @@
           </div>
         </div>
         <!-- ./col -->
-        <div class="col-lg-6 col-xs-6">
+        <div class="col-lg-4 col-xs-6">
           <!-- small box -->
           <div class="small-box bg-green">
             <div class="inner">
-              <h3>-</h3>
+              <h3><?php echo $jumlahditerima; ?></h3>
 
               <p>Pendaftar Diterima</p>
             </div>
             <div class="icon">
               <i class="ion ion-stats-bars"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-maroon">
+            <div class="inner">
+              <h3><?php echo $jumlahuser; ?></h3>
+
+              <p>Jumlah User</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-user"></i>
             </div>
             <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>

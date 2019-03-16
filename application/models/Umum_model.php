@@ -31,7 +31,8 @@ class Umum_model extends CI_Model {
 			'pasphoto' => $d['file_name'],
 			'tanggal_magang' => $this->input->post('tanggal_magang'),
 			'lama_magang' => $this->input->post('lama_magang'),
-			'email' => $this->session->userdata('email'),
+            'email' => $this->session->userdata('email'),
+            'status' => 'Belum Dikonfirmasi',
  		);
 		$this->db->insert('datapendaftar', $data);
 	}

@@ -6,6 +6,7 @@
     <li><a href="<?php echo base_url('admin'); ?>"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
     <li><a href="<?php echo base_url('admin/user'); ?>"><i class="fa fa-dashboard"></i> <span>User</span></a></li>
     <li><a href="<?php echo base_url('admin/pendaftar'); ?>"><i class="fa fa-dashboard"></i> <span>Pendaftar</span></a></li>
+    <li><a href="<?php echo base_url('logout'); ?>"><i class="fa fa-sign-out"></i> Logout</a></li>
   </ul>
 </section>
 <!-- /.sidebar -->

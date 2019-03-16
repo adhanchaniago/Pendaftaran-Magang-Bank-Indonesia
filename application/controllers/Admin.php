@@ -12,8 +12,12 @@ class Admin extends CI_Controller {
 	public function index()
 	{
 		$data1 = $this->Admin_model->jumlahPendaftar();
+		$data2 = $this->Admin_model->jumlahUser();
+		$data3 = $this->Admin_model->jumlahPendaftarDiterima();
 		$data = array(
 			'jumlahpendaftar' => $data1,
+			'jumlahuser' => $data2,
+			'jumlahditerima' => $data3,
 		);
 		$this->load->view('Admin/index', $data);
 	}
@@ -115,7 +119,7 @@ class Admin extends CI_Controller {
 	{
 		$this->Admin_model->hapusUser($id);
 		$this->session->set_flashdata('sukses', 'Berhasil Menghapus User');
-			redirect(base_url('admin/user'));
+		redirect(base_url('admin/user'));
 	}
 
 	public function pendaftar()
@@ -125,5 +129,12 @@ class Admin extends CI_Controller {
 			'pendaftar' => $data1,
 		);
 		$this->load->view('Admin/pendaftar', $data);
+	}
+
+	public function konfirmasipendaftar($id)
+	{
+		$this->Admin_model->konfirmasiPendaftar($id);
+		$this->session->set_flashdata('sukses', 'Berhasil Dikonfirmasi');
+		redirect(base_url('admin/pendaftar'));
 	}
 }

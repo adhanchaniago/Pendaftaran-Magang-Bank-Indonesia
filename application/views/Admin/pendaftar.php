@@ -26,7 +26,7 @@
       <?php
       if($this->session->flashdata('sukses'))
       {
-        echo '<script>alert("Terima Kasih telah Melakukan Pendaftaran");</script>';
+        echo '<script>alert(`'.$this->session->flashdata('sukses').'`);</script>';
       }
       ?>
       <!-- Main row -->
@@ -54,6 +54,7 @@
                       <th>Jurusan</th>
                       <th>Tanggal Magang</th>
                       <th>Lama Magang</th>
+                      <th>Status</th>
                       <th>Aksi</th>
                     </tr>
                   </thead>
@@ -75,8 +76,18 @@
                       <td><?php echo $row['jurusan_sekolah']; ?></td>
                       <td><?php echo $row['tanggal_magang']; ?></td>
                       <td><?php echo $row['lama_magang']; ?></td>
+                      <td><?php echo $row['status']; ?></td>
                       <td>
-                        <a href="" class="btn btn-success btn-sm">KONFIRMASI</a>
+                        <?php
+                        if($row['status'] == 'Belum Dikonfirmasi')
+                        {
+                          echo '<a href="'.base_url('admin/konfirmasipendaftar/').$row['id'].'" class="btn btn-success btn-sm">KONFIRMASI</a>';
+                        }
+                        else
+                        {
+                          echo '<a href="#" class="btn btn-success btn-sm">-</a>';
+                        }
+                        ?>
                       </td>
                     </tr>
                   <?php } ?>

@@ -27,7 +27,7 @@
       <?php
       if($this->session->flashdata('sukses'))
       {
-        echo '<script>alert(`'.$this->session->flashdata('sukses').'`);</script>';
+         
       }
       if($this->session->flashdata('gagal'))
       {
