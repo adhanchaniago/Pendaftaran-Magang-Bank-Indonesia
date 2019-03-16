@@ -7,3 +7,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['login'] = 'Auth/login';
 $route['logout'] = 'Auth/logout';
+
+// ADMIN
+$route['admin/user/edit/(:any)'] = 'Admin/edituser/$1';
+$route['admin/user/hapus/(:any)'] = 'Admin/hapususer/$1';

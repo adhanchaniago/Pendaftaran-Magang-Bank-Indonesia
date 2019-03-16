@@ -19,6 +19,7 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
+      <a href="<?php echo base_url('admin/tambahuser'); ?>" class="btn btn-success">Tambah User</a>
     </section>
 
     <!-- Main content -->
@@ -26,13 +27,20 @@
       <?php
       if($this->session->flashdata('sukses'))
       {
-        echo '<script>alert("Terima Kasih telah Melakukan Pendaftaran");</script>';
+        echo '<script>alert(`'.$this->session->flashdata('sukses').'`);</script>';
+      }
+      if($this->session->flashdata('gagal'))
+      {
+        echo '<div class="alert alert-danger alert-dismissible">
+        <h4><i class="icon fa fa-ban"></i> Gagal!</h4>
+        '.$this->session->flashdata('gagal').'
+      </div>';
       }
       ?>
       <!-- Main row -->
       <div class="row">
         <div class="col-lg-12">
-          <div class="box">
+          <div class="box box-solid box-primary">
             <div class="box-header">
               <h3 class="box-title">Data User</h3>
             </div>
@@ -60,7 +68,8 @@
                       <td><?php echo $user['level']; ?></td>
                       <td><?php echo $user['tanggal']; ?></td>
                       <td>
-                        <a href="" class="btn btn-success btn-sm">KONFIRMASI</a>
+                        <a href="<?php echo base_url('admin/user/edit/').$user['id']; ?>" class="label label-success">EDIT</a>
+                        <a href="<?php echo base_url('admin/user/hapus/').$user['id']; ?>" class="label label-danger">HAPUS</a>
                       </td>
                     </tr>
                   <?php } ?>

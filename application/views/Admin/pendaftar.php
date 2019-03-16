@@ -19,10 +19,6 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1>
-        Dashboard
-        <small>Control panel</small>
-      </h1>
     </section>
 
     <!-- Main content -->
@@ -36,7 +32,7 @@
       <!-- Main row -->
       <div class="row">
         <div class="col-lg-12">
-          <div class="box">
+          <div class="box box-solid box-primary">
             <div class="box-header">
               <h3 class="box-title">Data Pendaftar Siswa/Mahasiswa Magang</h3>
             </div>
@@ -64,7 +60,7 @@
                   <tbody>
                     <?php
                     $no = 1;
-                    foreach($umum as $row) {
+                    foreach($pendaftar as $row) {
                     ?>
                     <tr>
                       <td><?php echo $no++; ?></td>
