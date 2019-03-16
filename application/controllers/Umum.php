@@ -15,7 +15,11 @@ class Umum extends CI_Controller {
 
 	public function dashboard()
 	{
-		$this->load->view('Umum/dashboard');
+		$data1 = $this->Umum_model->cekStatus($this->session->userdata('email'));
+		$data = array(
+			'hasilstatus' => $data1,
+		);
+		$this->load->view('Umum/dashboard', $data);
 	}
 
 	public function pendaftaran()

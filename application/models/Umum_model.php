@@ -123,6 +123,12 @@ class Umum_model extends CI_Model {
         {
         	return $this->upload->data();
         }
-	}
+    }
+    
+    public function cekStatus($where)
+    {
+        $this->db->where('email', $where);
+        return $this->db->get('datapendaftar')->result_array();
+    }
 }
  

@@ -27,9 +27,9 @@
       if(validation_errors())
       {
         echo '<div class="alert alert-danger alert-dismissible">
-        <h4><i class="icon fa fa-ban"></i> Gagal!</h4>
-        '.validation_errors().'
-      </div>';
+                <h4><i class="icon fa fa-ban"></i> Gagal!</h4>
+                '.validation_errors().'
+              </div>';
       }
       ?>
       <!-- Main row -->
