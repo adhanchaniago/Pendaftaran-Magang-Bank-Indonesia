@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AdminLTE 2 | Log in</title>
+  <title><?php echo SITE_NAME; ?></title>
   <?php $this->load->view('include/css'); ?>
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
     <!-- <a href="../../index2.html"><b>BANK </b>INDONESIA</a> -->
-    <img src="<?php echo base_url('asset/home/images/logo_bi.png'); ?>" width="350" height="75">
+    <a href="<?php echo base_url(''); ?>"><img src="<?php echo base_url('asset/home/images/logo_bi.png'); ?>" width="350" height="75"></a>
   </div>
   <!-- /.login-logo -->
   <?php

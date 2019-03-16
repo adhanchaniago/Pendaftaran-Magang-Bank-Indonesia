@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AdminLTE 2 | Dashboard</title>
+  <title><?php echo SITE_NAME; ?></title>
   <?php $this->load->view('include/css'); ?>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -12,7 +12,7 @@
   </header>
   <!-- Left side column. contains the logo and sidebar -->
   <aside class="main-sidebar">
-    <?php $this->load->view('include/sidebar'); ?>
+    <?php $this->load->view('include/sidebar_humas'); ?>
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
@@ -21,7 +21,6 @@
     <section class="content-header">
       <h1>
         Dashboard
-        <small>Control panel</small>
       </h1>
     </section>
 
@@ -33,30 +32,30 @@
         echo '<script>alert("Terima Kasih telah Melakukan Pendaftaran");</script>';
       }
       ?>
-      <!-- Small boxes (Stat box) -->
+      
       <div class="row">
-        <div class="col-lg-4 col-xs-6">
+        <div class="col-lg-6 col-xs-6">
           <!-- small box -->
           <div class="small-box bg-aqua">
             <div class="inner">
-              <h3>-</h3>
+              <h3><?php echo $jumlahpendaftar; ?></h3>
 
               <p>Jumlah Pendafaran</p>
             </div>
             <div class="icon">
-              <i class="ion ion-bag"></i>
+              <i class="fa fa-user"></i>
             </div>
             <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
-        <div class="col-lg-4 col-xs-6">
+        <div class="col-lg-6 col-xs-6">
           <!-- small box -->
           <div class="small-box bg-green">
             <div class="inner">
-              <h3>-</h3>
+              <h3><?php echo $jumlahditerima; ?></h3>
 
-              <p>Pendaftar Ketrima</p>
+              <p>Pendaftar Diterima</p>
             </div>
             <div class="icon">
               <i class="ion ion-stats-bars"></i>
@@ -65,29 +64,14 @@
           </div>
         </div>
         <!-- ./col -->
-        <div class="col-lg-4 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-yellow">
-            <div class="inner">
-              <h3>-</h3>
-
-              <p>Jumlah Berkas</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-person-add"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
       </div>
-      <!-- /.row -->
+
       <!-- Main row -->
       <div class="row">
         <div class="col-lg-12">
-          <div class="box">
+          <div class="box box-solid box-primary">
             <div class="box-header">
-              <h3 class="box-title">Data Table With Full Features</h3>
+              <h3 class="box-title">Data Pendaftar Siswa/Mahasiswa Magang</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -107,6 +91,7 @@
                       <th>Jurusan</th>
                       <th>Tanggal Magang</th>
                       <th>Lama Magang</th>
+                      <th>Status</th>
                       <th>Aksi</th>
                     </tr>
                   </thead>
@@ -128,8 +113,18 @@
                       <td><?php echo $row['jurusan_sekolah']; ?></td>
                       <td><?php echo $row['tanggal_magang']; ?></td>
                       <td><?php echo $row['lama_magang']; ?></td>
+                      <td><?php echo $row['status']; ?></td>
                       <td>
-                        <a href="" class="btn btn-success btn-sm">KONFIRMASI</a>
+                        <?php
+                        if($row['status'] == 'Belum Dikonfirmasi')
+                        {
+                          echo '<a href="'.base_url('admin/konfirmasipendaftar/').$row['id'].'" class="btn btn-success btn-sm">KONFIRMASI</a>';
+                        }
+                        else
+                        {
+                          echo '<a href="#" class="btn btn-success btn-sm">-</a>';
+                        }
+                        ?>
                       </td>
                     </tr>
                   <?php } ?>
