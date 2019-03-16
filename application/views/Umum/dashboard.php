@@ -33,24 +33,36 @@
       <div class="row">
         <div class="col-lg-12">
           <?php
-            if($hasilstatus[0]['status'] == 'Belum Dikonfirmasi')
-            {
-              echo '<div class="alert alert-danger alert-dismissible">
-                      <h4 class="text-center">
-                        Maaf! Pendaftaran Anda Belum Dikonfirmasi oleh Pihak Bank Indonesia. <br>
-                        Mohon Menunggu Sampai Kami Mengabari Kembali
-                      </h4>
-                    </div>';
-            }
-            if($hasilstatus[0]['status'] == 'Diterima')
+            if($hasilstatus == NULL)
             {
               echo '<div class="alert alert-success alert-dismissible">
-                      <h4 class="text-center">
-                        Selamat! Pendaftaran Anda Telah Diterima. <br>
-                        Silahkan Menunggu Kabar Selanjutnya Melalui SMS/EMAIL.
-                      </h4>
-                    </div>';
+                        <h4 class="text-center">
+                          Selamat Datang.
+                        </h4>
+                      </div>';
             }
+            else
+            {
+              if($hasilstatus[0]['status'] == 'Belum Dikonfirmasi')
+              {
+                echo '<div class="alert alert-danger alert-dismissible">
+                        <h4 class="text-center">
+                          Maaf! Pendaftaran Anda Belum Dikonfirmasi oleh Pihak Bank Indonesia. <br>
+                          Mohon Menunggu Sampai Kami Mengabari Kembali
+                        </h4>
+                      </div>';
+              }
+              if($hasilstatus[0]['status'] == 'Diterima')
+              {
+                echo '<div class="alert alert-success alert-dismissible">
+                        <h4 class="text-center">
+                          Selamat! Pendaftaran Anda Telah Diterima. <br>
+                          Silahkan Menunggu Kabar Selanjutnya Melalui SMS/EMAIL.
+                        </h4>
+                      </div>';
+              }
+            }
+            
             ?>
         </div>
       </div>
