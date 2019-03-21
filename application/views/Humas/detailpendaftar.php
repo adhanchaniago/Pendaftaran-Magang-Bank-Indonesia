@@ -87,19 +87,19 @@
                     </tr>
                     <tr>
                         <th>Surat Magang</th>
-                        <td><?php echo $detail['berkas_magang']; ?> <a href="<?php echo base_url('download/').$detail['berkas_magang']; ?>" class="btn btn-sm btn-primary">DOWNLOAD</a></td>
+                        <td><?php echo $detail['berkas_magang']; ?> <a href="<?php echo base_url('download/surat/').$detail['berkas_magang']; ?>" class="btn btn-sm btn-primary">DOWNLOAD</a></td>
                     </tr>
                     <tr>
                         <th>Proposal</th>
-                        <td><?php echo $detail['berkas_rekomendasi']; ?> <a href="<?php echo base_url('download/').$detail['berkas_rekomendasi']; ?>" class="btn btn-sm btn-primary">DOWNLOAD</a></td>
+                        <td><?php echo $detail['berkas_rekomendasi']; ?> <a href="<?php echo base_url('download/proposal/').$detail['berkas_rekomendasi']; ?>" class="btn btn-sm btn-primary">DOWNLOAD</a></td>
                     </tr>
                     <tr>
                         <th>CV/Portofolio</th>
-                        <td><?php echo $detail['cv']; ?> <a href="<?php echo base_url('download/').$detail['cv']; ?>" class="btn btn-sm btn-primary">DOWNLOAD</a></td>
+                        <td><?php echo $detail['cv']; ?> <a href="<?php echo base_url('download/cv/').$detail['cv']; ?>" class="btn btn-sm btn-primary">DOWNLOAD</a></td>
                     </tr>
                     <tr>
                         <th>Pas Photo</th>
-                        <td><?php echo $detail['pasphoto']; ?> <a href="<?php echo base_url('download/').$detail['pasphoto']; ?>" class="btn btn-sm btn-primary">DOWNLOAD</a></td>
+                        <td><?php echo $detail['pasphoto']; ?> <a href="<?php echo base_url('download/photo/').$detail['pasphoto']; ?>" class="btn btn-sm btn-primary">DOWNLOAD</a></td>
                     </tr>
                     <tr>
                         <th>Tanggal Magang | Lama Magang</th>
