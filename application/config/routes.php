@@ -11,3 +11,6 @@ $route['logout'] = 'Auth/logout';
 // ADMIN
 $route['admin/user/edit/(:any)'] = 'Admin/edituser/$1';
 $route['admin/user/hapus/(:any)'] = 'Admin/hapususer/$1';
+
+// HUMAS
+$route['pendaftar/(:any)'] = 'Humas/detailpendaftaran/$1'; 

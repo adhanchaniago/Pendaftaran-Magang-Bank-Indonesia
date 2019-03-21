@@ -125,6 +125,7 @@
                           echo '<a href="#" class="btn btn-success btn-sm">-</a>';
                         }
                         ?>
+                        <a href="<?php echo base_url('pendaftar/').$row['id']; ?>" class="btn btn-primary">DETAIL</a>
                       </td>
                     </tr>
                   <?php } ?>

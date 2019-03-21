@@ -21,4 +21,20 @@ class Humas extends CI_Controller {
 		);
 		$this->load->view('Humas/index', $data);
 	}
+
+	public function detailpendaftaran($id)
+	{
+		$data1 = $this->Humas_model->detailPendaftar($id)->row_array();
+		$data = array(
+			'detail' => $data1,
+		);
+		$this->load->view('Humas/detailpendaftar', $data);
+	}
+
+	public function konfirmasipendaftar($id)
+	{
+		$this->hUMAS_model->konfirmasiPendaftar($id);
+		$this->session->set_flashdata('sukses', 'Berhasil Dikonfirmasi');
+		redirect(base_url('humas'));
+	}
 }

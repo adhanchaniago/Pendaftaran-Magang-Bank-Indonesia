@@ -8,6 +8,21 @@ class Humas_model extends CI_Model {
 		return $this->db->get('datapendaftar')->result_array();
 	}
 
+	public function detailPendaftar($where)
+	{
+		$this->db->where('id', $where);
+		return $this->db->get('datapendaftar');
+	}
+
+	public function konfirmasiPendaftar($where)
+	{
+		$data = array(
+			'status' => 'Diterima',
+		);
+		$this->db->where('id', $where);
+		return $this->db->update('datapendaftar', $data);
+	}
+
 	// JUMLAH
 	public function jumlahPendaftar()
 	{
