@@ -29,7 +29,7 @@
       <?php
       if($this->session->flashdata('sukses'))
       {
-        echo '<script>alert("Terima Kasih telah Melakukan Pendaftaran");</script>';
+        echo '<script>alert(`'.$this->session->flashdata('sukses').'`);</script>';
       }
       ?>
       
@@ -118,7 +118,7 @@
                         <?php
                         if($row['status'] == 'Belum Dikonfirmasi')
                         {
-                          echo '<a href="'.base_url('admin/konfirmasipendaftar/').$row['id'].'" class="btn btn-success btn-sm">KONFIRMASI</a>';
+                          echo '<a href="'.base_url('humas/konfirmasipendaftar/').$row['id'].'" class="btn btn-success btn-sm">KONFIRMASI</a>';
                         }
                         else
                         {

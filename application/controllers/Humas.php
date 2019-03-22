@@ -33,7 +33,7 @@ class Humas extends CI_Controller {
 
 	public function konfirmasipendaftar($id)
 	{
-		$this->hUMAS_model->konfirmasiPendaftar($id);
+		$this->Humas_model->konfirmasiPendaftar($id);
 		$this->session->set_flashdata('sukses', 'Berhasil Dikonfirmasi');
 		redirect(base_url('humas'));
 	}

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 16, 2019 at 09:04 AM
+-- Generation Time: Mar 22, 2019 at 11:30 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.0
 
@@ -48,6 +48,13 @@ CREATE TABLE `datapendaftar` (
   `email` varchar(100) NOT NULL,
   `status` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `datapendaftar`
+--
+
+INSERT INTO `datapendaftar` (`id`, `nama`, `ttl`, `jeniskelamin`, `nohp`, `kota`, `alamat_asal`, `alamat_sekarang`, `asal_sekolah`, `jurusan_sekolah`, `berkas_magang`, `berkas_rekomendasi`, `cv`, `pasphoto`, `tanggal_magang`, `lama_magang`, `email`, `status`) VALUES
+(1, 'WAHYU RIZKY EKA PERWIRA', '1996-01-01', 'L', '4', 'KABUPATEN ACEH SINGKIL', 'SEMARANG', 'A', 'A', 'A', 'WAHYU_RIZKY_EKA_PERWIRA_proposal.pdf', 'WAHYU_RIZKY_EKA_PERWIRA_surat.pdf', 'WAHYU_RIZKY_EKA_PERWIRA_cv.pdf', 'WAHYU_RIZKY_EKA_PERWIRA_photo.jpg', '2019-03-01', '3', 'wrep17@gmail.com', 'Diterima');
 
 -- --------------------------------------------------------
 
@@ -603,7 +610,8 @@ INSERT INTO `user` (`id`, `email`, `password`, `level`, `tanggal`) VALUES
 (1, 'wrep17@gmail.com', '$2y$10$k8zWbT5njUmE1L5uazvRxeYscW7mju4M.P1ioiOS1LbvN8C8XJr2a', 'Umum', '2019-03-14'),
 (2, 'admin@gmail.com', '$2y$10$EEpIY6XBfX878CYNGZVuKOxSkKdwe/jcnIZ8nrmf68xWqv7kxx9Zq', 'Admin', '2019-03-14'),
 (3, 'humas@gmail.com', '$2y$10$YwKzwmNEWuNhc/0qEt1BFegWjMu6aE6qjWy6tNde64A2KOZISs9BW', 'Humas', '2019-03-14'),
-(4, 'wrepshop@gmail.com', '$2y$10$KqXUyRlSW5EVNPUUs7gv1.h6Yim98O6Kp1ypt1HxMB10ob5Rad7Ci', 'Admin', '2019-03-16');
+(4, 'wrepshop@gmail.com', '$2y$10$KqXUyRlSW5EVNPUUs7gv1.h6Yim98O6Kp1ypt1HxMB10ob5Rad7Ci', 'Admin', '2019-03-16'),
+(5, 'hasdasd@gmail.com', '$2y$10$hTmrBiF4GMtAQbOmzv6Hauda5GacaW.7eTvwUfdWTxB9fVQ3YnX7e', 'Umum', '2019-03-16');
 
 --
 -- Indexes for dumped tables
