@@ -176,34 +176,34 @@
       <div class="row no-gutters">
         <div class="col-md-4 gallery-grid1">
           <a href="#gal1">
-            <img src="<?php echo base_url('asset/home/'); ?>images/g1.jpg" alt=" " class="img-fluid" />
+            <img src="<?php echo base_url('asset/home/'); ?>images/bi1.jpeg" alt=" " class="img-fluid" />
           </a>
         </div>
         <div class="col-md-4 gallery-grid1">
           <a href="#gal2">
-            <img src="<?php echo base_url('asset/home/'); ?>images/g2.jpg" alt=" " class="img-fluid" />
+            <img src="<?php echo base_url('asset/home/'); ?>images/bi2.jpeg" alt=" " class="img-fluid" />
           </a>
         </div>
         <div class="col-md-4 gallery-grid1">
           <a href="#gal3">
-            <img src="<?php echo base_url('asset/home/'); ?>images/g3.jpg" alt=" " class="img-fluid" />
+            <img src="<?php echo base_url('asset/home/'); ?>images/bi3.jpeg" alt=" " class="img-fluid" />
           </a>
         </div>
       </div>
       <div class="row no-gutters">
         <div class="col-md-4 gallery-grid1">
           <a href="#gal4">
-            <img src="<?php echo base_url('asset/home/'); ?>images/g4.jpg" alt=" " class="img-fluid" />
+            <img src="<?php echo base_url('asset/home/'); ?>images/bi4.jpeg" alt=" " class="img-fluid" />
           </a>
         </div>
         <div class="col-md-4 gallery-grid1">
           <a href="#gal5">
-            <img src="<?php echo base_url('asset/home/'); ?>images/g5.jpg" alt=" " class="img-fluid" />
+            <img src="<?php echo base_url('asset/home/'); ?>images/bi5.jpeg" alt=" " class="img-fluid" />
           </a>
         </div>
         <div class="col-md-4 gallery-grid1">
           <a href="#gal6">
-            <img src="<?php echo base_url('asset/home/'); ?>images/g6.jpg" alt=" " class="img-fluid" />
+            <img src="<?php echo base_url('asset/home/'); ?>images/bi6.jpeg" alt=" " class="img-fluid" />
           </a>
         </div>
       </div>
@@ -212,8 +212,8 @@
     <!-- popup-->
     <div id="gal1" class="pop-overlay animate">
       <div class="popup">
-        <img src="<?php echo base_url('asset/home/'); ?>images/g1.jpg" alt="Popup Image" class="img-fluid" />
-        <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+        <img src="<?php echo base_url('asset/home/'); ?>images/bi1.jpeg" alt="Popup Image" class="img-fluid" />
+        <p class="mt-4">Tambahkan Deskripsi Disini.</p>
         <a class="close" href="#gallery">&times;</a>
       </div>
     </div>
@@ -221,8 +221,8 @@
     <!-- popup-->
     <div id="gal2" class="pop-overlay animate">
       <div class="popup">
-        <img src="<?php echo base_url('asset/home/'); ?>images/g2.jpg" alt="Popup Image" class="img-fluid" />
-        <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+        <img src="<?php echo base_url('asset/home/'); ?>images/bi2.jpeg" alt="Popup Image" class="img-fluid" />
+        <p class="mt-4">Tambahkan Deskripsi Disini.</p>
         <a class="close" href="#gallery">&times;</a>
       </div>
     </div>
@@ -230,8 +230,8 @@
     <!-- popup-->
     <div id="gal3" class="pop-overlay animate">
       <div class="popup">
-        <img src="<?php echo base_url('asset/home/'); ?>images/g3.jpg" alt="Popup Image" class="img-fluid" />
-        <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+        <img src="<?php echo base_url('asset/home/'); ?>images/bi3.jpeg" alt="Popup Image" class="img-fluid" />
+        <p class="mt-4">Tambahkan Deskripsi Disini.</p>
         <a class="close" href="#gallery">&times;</a>
       </div>
     </div>
@@ -239,8 +239,8 @@
     <!-- popup-->
     <div id="gal4" class="pop-overlay animate">
       <div class="popup">
-        <img src="<?php echo base_url('asset/home/'); ?>images/g4.jpg" alt="Popup Image" class="img-fluid" />
-        <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+        <img src="<?php echo base_url('asset/home/'); ?>images/bi4.jpeg" alt="Popup Image" class="img-fluid" />
+        <p class="mt-4">Tambahkan Deskripsi Disini.</p>
         <a class="close" href="#gallery">&times;</a>
       </div>
     </div>
@@ -248,8 +248,8 @@
     <!-- popup-->
     <div id="gal5" class="pop-overlay animate">
       <div class="popup">
-        <img src="<?php echo base_url('asset/home/'); ?>images/g5.jpg" alt="Popup Image" class="img-fluid" />
-        <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+        <img src="<?php echo base_url('asset/home/'); ?>images/bi5.jpeg" alt="Popup Image" class="img-fluid" />
+        <p class="mt-4">Tambahkan Deskripsi Disini.</p>
         <a class="close" href="#gallery">&times;</a>
       </div>
     </div>
@@ -257,8 +257,8 @@
     <!-- popup-->
     <div id="gal6" class="pop-overlay animate">
       <div class="popup">
-        <img src="<?php echo base_url('asset/home/'); ?>images/g6.jpg" alt="Popup Image" class="img-fluid" />
-        <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+        <img src="<?php echo base_url('asset/home/'); ?>images/bi6.jpeg" alt="Popup Image" class="img-fluid" />
+        <p class="mt-4">Tambahkan Deskripsi Disini.</p>
         <a class="close" href="#gallery">&times;</a>
       </div>
     </div>
